@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sistem Informasi Sekolah</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Sistem Informasi Sekolah</h1>
+    <nav>
+      <button onclick="showSection('home')">Beranda</button>
+      <button onclick="showSection('teachers')">Guru</button>
+      <button onclick="showSection('students')">Siswa</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="active">
+      <h2>Selamat Datang di Sekolah Harapan Bangsa</h2>
+      <p>Sekolah Harapan Bangsa adalah tempat belajar yang inspiratif dengan staf pengajar berpengalaman.</p>
+    </section>
+
+    <section id="teachers">
+      <h2>Daftar Guru</h2>
+      <ul id="teacher-list"></ul>
+    </section>
+
+    <section id="students">
+      <h2>Daftar Siswa</h2>
+      <ul id="student-list"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sekolah Harapan Bangsa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
